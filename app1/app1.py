@@ -1,9 +1,10 @@
 import reflex as rx
 from .components.navbar import navbar
+from .components.header import header
 
 
 def index():
-    return rx.container(navbar(), rx.divider())
+    return rx.container(navbar(), rx.divider(), header())
 
 
 def about():
