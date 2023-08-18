@@ -3,19 +3,11 @@ from .components.navbar import navbar
 
 
 def index():
-    return rx.container(
-        navbar(),
-    )
+    return rx.container(navbar(), rx.divider())
 
 
 def about():
-    return rx.text(
-        "conoce mas acerca de nosotros  .....",
-        font_size="40px",
-        color="red",
-        bg="black",
-        _hover={"color": "white", "bg": "red"},
-    )
+    return rx.container(navbar(), rx.divider())
 
 
 app = rx.App()
