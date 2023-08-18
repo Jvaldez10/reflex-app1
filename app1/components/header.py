@@ -22,7 +22,12 @@ def header():
             rx.box(
                 rx.heading("Hola trabajo con reflex.", size="xl"),
                 rx.heading("Soy developer python", size="sm"),
-                rx.button("click me!.", margin_top="2rem", on_click=myState.get_quote),
+                rx.button(
+                    "click me!.",
+                    margin_top="1rem",
+                    margin_bottom="0.5rem",
+                    on_click=myState.get_quote,
+                ),
                 quote(),
             )
         ),
